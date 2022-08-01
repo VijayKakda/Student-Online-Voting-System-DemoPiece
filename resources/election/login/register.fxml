@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="election.login.RegisterController">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="520.0" style="-fx-background-color: #E96151;">
+         <children>
+            <Label layoutX="22.0" layoutY="22.0" text="User Registration" textFill="#fcf8f8">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="70.0" layoutY="115.0" text="name" />
+      <TextField fx:id="usernameTextField" layoutX="70.0" layoutY="213.0" promptText="username" />
+      <Label layoutX="70.0" layoutY="185.0" text="username" />
+      <PasswordField fx:id="setPasswordField" layoutX="70.0" layoutY="283.0" promptText="password" />
+      <TextField fx:id="nameTextField" layoutX="70.0" layoutY="145.0" promptText="name" />
+      <Label layoutX="70.0" layoutY="254.0" text="password" />
+      <Button fx:id="registerButton" alignment="CENTER" layoutX="287.0" layoutY="199.0" mnemonicParsing="false" onAction="#registrationButtonOnAction" prefHeight="25.0" prefWidth="187.0" text="Register" />
+      <Button fx:id="closeButton" alignment="CENTER" layoutX="287.0" layoutY="265.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefHeight="25.0" prefWidth="187.0" text="Close" />
+      <Label layoutX="71.0" layoutY="320.0" text="confirm password" />
+      <PasswordField fx:id="confirmPasswordField" layoutX="70.0" layoutY="349.0" promptText="confirm password" />
+      <Label fx:id="registrationMessageLabel" alignment="CENTER" layoutX="14.0" layoutY="91.0" prefHeight="17.0" prefWidth="486.0" textFill="#3204ff">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="confirmPasswordLabel" alignment="TOP_LEFT" layoutX="226.0" layoutY="352.0" prefHeight="19.0" prefWidth="200.0" textFill="#ff0505">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
